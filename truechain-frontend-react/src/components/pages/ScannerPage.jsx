@@ -1,6 +1,6 @@
 import { Box, Paper, Avatar, Typography, Button } from '@mui/material';
 import bgImg from '../../img/bg.png';
-import QrScanner from '../QrScanner';
+import QrScannerComponent from '../QrScanner';
 import { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -92,7 +92,7 @@ const ScannerPage = () => {
                     >
                         Scan QR Code</Typography>
 
-                    <QrScanner passData={passData}/>
+                    <QrScannerComponent passData={passData}/>
 
                     <Box
                         sx={{

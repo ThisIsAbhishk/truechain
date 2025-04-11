@@ -43,7 +43,7 @@ const AddAccount = () => {
         const data = new FormData();
         data.append("image", image.file);
 
-        axios.post("http://localhost:5000/upload/profile", data, {
+        axios.post("http://truechain.onrender.com/upload/profile", data, {
             headers: { "Content-Type": "multipart/form-data" }
         }).then(res => {
             console.log(res);
@@ -90,14 +90,14 @@ const AddAccount = () => {
                 "role" : role
               });
 
-            const res = await axios.post('http://localhost:5000/addaccount', accountData,
+            const res = await axios.post('http://truechain.onrender.com/addaccount', accountData,
                 {
                     headers: {'Content-Type': 'application/json'}, 
                 });
             
             console.log(JSON.stringify(res.data));
 
-            const res2 = await axios.post('http://localhost:5000/addprofile', profileData,
+            const res2 = await axios.post('http://truechain.onrender.com/addprofile', profileData,
                 {
                     headers: {'Content-Type': 'application/json'},
                 });

@@ -97,7 +97,7 @@ const Product = () => {
     const getImage = async (imageName) => {
         setImage(prevState => ({
             ...prevState,
-            filepreview: `http://localhost:5000/file/product/${imageName}`
+            filepreview: `https://truechain.onrender.com/file/product/${imageName}`
             })
         )
     }

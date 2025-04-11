@@ -24,7 +24,6 @@
     "react-apexcharts": "1.4.0",
     "react-dom": "^18.2.0",
     "react-geocode": "^0.2.3",
-    "react-qr-reader": "^3.0.0-beta-1",
     "react-qr-scanner": "^1.0.0-alpha.11",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",

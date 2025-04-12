@@ -152,7 +152,7 @@ const AddProduct = () => {
     }
 
     const getUsername = async (e) => {
-        const res = await axios.get(`https://truechain.onrender.com/profile/${auth.user}`)
+        const res = await axios.get(`https://truechain-backend.onrender.com/profile/${auth.user}`)
             .then(res => {
                 console.log(JSON.stringify(res?.data[0]));
                 setManuName(res?.data[0].name);
@@ -166,7 +166,7 @@ const AddProduct = () => {
         const data = new FormData();
         data.append("image", image.file);
 
-        axios.post("https://truechain.onrender.com/upload/product", data, {
+        axios.post("https://truechain-backend.onrender.com/upload/product", data, {
             headers: { "Content-Type": "multipart/form-data" }
         }).then(res => {
             console.log(res);
@@ -230,7 +230,7 @@ const AddProduct = () => {
                 "brand": brand,
               });
 
-            const res = await axios.post('https://truechain.onrender.com/addproduct', profileData,
+            const res = await axios.post('https://truechain-backend.onrender.com/addproduct', profileData,
                 {
                     headers: {'Content-Type': 'application/json'},
                 });
@@ -245,7 +245,7 @@ const AddProduct = () => {
     }
 
     const checkUnique = async () => {
-        const res = await axios.get("https://truechain.onrender.com/product/serialNumber");
+        const res = await axios.get("https://truechain-backend.onrender.com/product/serialNumber");
 
         const existingSerialNumbers = res.data.map((product) => product.serialnumber);
         existingSerialNumbers.push(serialNumber);

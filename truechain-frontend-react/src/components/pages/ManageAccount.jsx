@@ -31,7 +31,7 @@ const ManageAccount = () => {
     }, []);
 
     const handleData = async (e) => {
-        const res = await axios.get('https://truechain.onrender.com/profileAll')
+        const res = await axios.get('https://truechain-backend.onrender.com/profileAll')
             .then(res => {
                 console.log(JSON.stringify(res.data));
                 setRows(res.data);

@@ -13,11 +13,11 @@ app.use(cors());
 const port = 5000;
 
 const client = new Client({
-    host: "dpg-cvs9o5er433s73c1nbt0-a",
-    user: "truechaindb_user",
+    host: "dpg-d0u78tmmcj7s739d47ug-a",
+    user: "render_db_zujr_user",
     port: 5432,
-    password: "jDPk3IwBzuWDDbJ6cXv3Z064VIxVUMPL",
-    database: "truechaindb"
+    password: "eNODDRZ7F2DGUHouIAnFlbf6I2kovcdj",
+    database: "render_db_zujr"
 })
 
 client.connect()
